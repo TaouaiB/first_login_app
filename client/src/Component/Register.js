@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { register } from '../JS/Action/Action'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { register } from '../JS/Action/Action';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const [newUser, setNewUser]=useState({})
@@ -24,11 +24,11 @@ console.log(newUser)
 <input type="password" name="password" onChange={(e)=>handleUser(e)}></input>
 <label>phone</label>
 <input type="number" name="phone" onChange={(e)=>handleUser(e)}></input>
-<Link to="/Profile"><button onClick={(newUser)=>dispatch(register(newUser))}>Connect</button></Link>   
+  <Link to="/Profile"><button onClick={() => dispatch(register(newUser))}>Connect</button></Link>
 </form>
 
     </div>
   )
 }
 
-export default Register
+export default Register; 

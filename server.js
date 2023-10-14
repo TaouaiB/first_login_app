@@ -21,3 +21,5 @@ app.listen(PORT,(error)=>{
 app.use('/api/product',require('./Routes/productRoutes'))
 app.use('/api/user',require('./Routes/userRoutes'))
 
+
+

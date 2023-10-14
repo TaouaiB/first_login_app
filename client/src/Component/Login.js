@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useState } from 'react';
+import React from 'react';
+import { useDispatch } from 'react-redux';
 
-import { Link } from 'react-router-dom'
-import { login } from '../JS/Action/Action'
+import { Link } from 'react-router-dom';
+import { login } from '../JS/Action/Action';
+
 const Login = () => {
   const [user,setUser]=useState({})
   const dispatch=useDispatch()
@@ -21,7 +22,8 @@ console.log(user)
 <input type="text" name="username" onChange={(e)=>handleUser(e)}></input>
 <label>Password</label>
 <input type="password" name="password" onChange={(e)=>handleUser(e)}></input>
-<Link to="/Profile"><button onClick={(user)=>dispatch(login(user))}>Connect</button></Link>   
+<Link to="/Profile"><button onClick={() => dispatch(login(user))}>Connect</button></Link>
+
 </form>
 
     </div>
